@@ -13,4 +13,16 @@
 	<version>0.0.3-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Ligoj - Plugin KM (Kwnowledge Management)</name>
+
+	<profiles>
+		<profile>
+			<id>bintray</id>
+			<distributionManagement>
+				<repository>
+					<id>bintray-ligoj-maven-repo</id>
+					<url>https://api.bintray.com/maven/ligoj/maven-repo/plugin-km/;publish=1</url>
+				</repository>
+			</distributionManagement>
+		</profile>
+	</profiles>
 </project>
