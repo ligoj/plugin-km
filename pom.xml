@@ -1,10 +1,9 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.ligoj.api</groupId>
 		<artifactId>plugin-parent</artifactId>
-		<version>2.1.0</version>
+		<version>2.4.4</version>
 		<relativePath />
 	</parent>
 
@@ -13,6 +12,16 @@
 	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Ligoj - Plugin KM (Kwnowledge Management)</name>
+
+	<scm>
+		<connection>scm:git:https://github.com/ligoj/plugin-km</connection>
+		<developerConnection>scm:git:https://github.com/ligoj/plugin-km</developerConnection>
+		<url>https://github.com/ligoj/plugin-km.git</url>
+	</scm>
+
+	<properties>
+		<sonar.sources>src/main/java</sonar.sources>
+	</properties>
 
 	<profiles>
 		<profile>
