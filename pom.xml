@@ -9,7 +9,7 @@
 
 	<groupId>org.ligoj.plugin</groupId>
 	<artifactId>plugin-km</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Ligoj - Plugin KM (Kwnowledge Management)</name>
 
