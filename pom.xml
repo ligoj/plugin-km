@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>org.ligoj.api</groupId>
 		<artifactId>plugin-parent</artifactId>
-		<version>4.1.4</version>
+		<version>4.1.5</version>
 		<relativePath />
 	</parent>
 
@@ -11,7 +11,7 @@
 	<artifactId>plugin-km</artifactId>
 	<version>1.0.2-SNAPSHOT</version>
 	<packaging>jar</packaging>
-	<name>Ligoj - Plugin KM (Kwnowledge Management)</name>
+	<name>Ligoj - Plugin KM (Knowledge Management)</name>
 
 	<scm>
 		<connection>scm:git:https://github.com/ligoj/plugin-km</connection>
