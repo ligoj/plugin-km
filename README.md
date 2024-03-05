@@ -1,4 +1,4 @@
-## :link: Ligoj Knowledge Management [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-km/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-km) [![Download](https://api.bintray.com/packages/ligoj/maven-repo/plugin-km/images/download.svg) ](https://bintray.com/ligoj/maven-repo/plugin-km/_latestVersion)
+## :link: Ligoj Knowledge Management [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-km/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-km)
 API plugin used for compatibility check
 
 [![Build Status](https://travis-ci.org/ligoj/plugin-km.svg?branch=master)](https://travis-ci.org/ligoj/plugin-km)
@@ -12,7 +12,6 @@ API plugin used for compatibility check
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://fabdouglas.mit-license.org/)
 
 [Ligoj](https://github.com/ligoj/ligoj) Knowledge Management plugin
-This a simple plug-in for services around Wiki and CMS.
 
 Dashboard features :
 - Last activity
