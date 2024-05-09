@@ -1,37 +1,38 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>org.ligoj.api</groupId>
-		<artifactId>plugin-parent</artifactId>
-		<version>4.1.7</version>
-		<relativePath />
-	</parent>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.ligoj.api</groupId>
+        <artifactId>plugin-parent</artifactId>
+        <version>4.1.8</version>
+        <relativePath/>
+    </parent>
 
-	<groupId>org.ligoj.plugin</groupId>
-	<artifactId>plugin-km</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
-	<packaging>jar</packaging>
-	<name>Ligoj - Plugin KM (Knowledge Management)</name>
+    <groupId>org.ligoj.plugin</groupId>
+    <artifactId>plugin-km</artifactId>
+    <version>1.0.2-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>Ligoj - Plugin KM (Knowledge Management)</name>
 
-	<scm>
-		<connection>scm:git:https://github.com/ligoj/plugin-km</connection>
-		<developerConnection>scm:git:https://github.com/ligoj/plugin-km</developerConnection>
-		<url>https://github.com/ligoj/plugin-km.git</url>
-	</scm>
+    <scm>
+        <connection>scm:git:https://github.com/ligoj/plugin-km</connection>
+        <developerConnection>scm:git:https://github.com/ligoj/plugin-km</developerConnection>
+        <url>https://github.com/ligoj/plugin-km.git</url>
+    </scm>
 
-	<properties>
-		<sonar.sources>src/main/java</sonar.sources>
-	</properties>
+    <properties>
+        <sonar.sources>src/main/java</sonar.sources>
+    </properties>
 
-	<profiles>
-		<profile>
-			<id>github</id>
-			<distributionManagement>
-				<repository>
-					<id>github-ligoj</id>
-					<url>https://maven.pkg.github.com/ligoj/plugin-km</url>
-				</repository>
-			</distributionManagement>
-		</profile>
-	</profiles>
+    <profiles>
+        <profile>
+            <id>github</id>
+            <distributionManagement>
+                <repository>
+                    <id>github-ligoj</id>
+                    <url>https://maven.pkg.github.com/ligoj/plugin-km</url>
+                </repository>
+            </distributionManagement>
+        </profile>
+    </profiles>
 </project>
