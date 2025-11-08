@@ -1,4 +1,4 @@
-## :link: Ligoj Knowledge Management [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-km/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.ligoj.plugin/plugin-km)
+## :link: Ligoj Knowledge Management ![Maven Central](https://img.shields.io/maven-central/v/org.ligoj.plugin/plugin-km)
 API plugin used for compatibility check
 
 [![Build Status](https://travis-ci.org/ligoj/plugin-km.svg?branch=master)](https://travis-ci.org/ligoj/plugin-km)
