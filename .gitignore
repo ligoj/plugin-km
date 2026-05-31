@@ -6,3 +6,4 @@
 **/dependency-reduced-pom.xml
 /*.exec
 /.idea
+src/main/resources/META-INF/resources/webjars/km/vue/
