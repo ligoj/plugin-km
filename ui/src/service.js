@@ -6,33 +6,13 @@
  * subscription-row hooks to the km-<tool> sub-plugin — the
  * `vm`/`bt`/`build` pattern.
  */
-import { pluginRegistry } from '@ligoj/host'
+import { toolPluginId, delegateFeature } from '@ligoj/host'
 
 /** `service:km:confluence:1` → `km-confluence`; null when no tool segment. */
-export function subPluginIdFor(subscription) {
-  const id = subscription?.node?.id || ''
-  const parts = id.split(':').filter(Boolean)
-  if (parts.length < 3) return null
-  return `${parts[1]}-${parts[2]}`
-}
+export const subPluginIdFor = toolPluginId
 
 /** Delegate `action` to the km-<tool> sub-plugin; degrade to [] on any failure. */
-export function delegateToToolPlugin(subscription, action) {
-  const subId = subPluginIdFor(subscription)
-  if (!subId) return []
-  const plugin = pluginRegistry.get(subId)
-  if (typeof plugin?.feature !== 'function') return []
-  try {
-    const result = plugin.feature(action, subscription)
-    if (result == null) return []
-    return Array.isArray(result) ? result : [result]
-  } catch (err) {
-    if (!new RegExp(`no feature ["']${action}["']`).test(err?.message || '')) {
-      console.warn(`[plugin:km] delegate to ${subId}.${action} threw`, err)
-    }
-    return []
-  }
-}
+export const delegateToToolPlugin = (subscription, action) => delegateFeature(subscription, action, 'km')
 
 const service = {
   subPluginIdFor,
